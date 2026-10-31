@@ -57,15 +57,6 @@ through Smartable.
   chain ID or genesis — before it is stored. Endpoints and keys are encrypted
   on the phone and never sent to Smartable. A network you have not connected is
   asked nothing.
-- **A narrow proxy.** One Cloudflare Worker serves swap and bridge quotes and
-  routes, route status, Smartable's fee, a short cache of CoinMarketCap prices,
-  the on-ramp session and signed list updates. It carries no chain traffic and
-  holds no wallet keys. When it is unavailable, those features say so and the
-  wallet keeps working.
-- **Prices on the device.** An on-device engine reads trading pools through
-  your own provider account. Only its prices are used in the checks before
-  signing; the CoinMarketCap cache is for display, and each price names its
-  source.
 - **No AI access.** There is no AI connector, relay, token or background
   access. *Analyze with AI* composes a text with the public addresses you pick,
   and you share it yourself.
