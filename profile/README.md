@@ -112,20 +112,6 @@ through Smartable.
   Dart and checks an EVM transaction's bytes before signing it, is in
   development. Releases do not use it yet.
 
-## Fees
-
-- The wallet has no subscription fee. Network fees are paid to the network;
-  Smartable does not pay or sponsor them.
-- For supported swap and cross-chain routes, the total service fee is **0.75%**
-  of the traded amount, with a minimum of **$0.50**. It includes the Smartable
-  fee and any part taken by the route's provider, and the review shows it before
-  you confirm.
-- Some bridge routes carry costs of their own, set by the bridge or protocol.
-  They are listed apart, shown before you sign, and Smartable receives none of
-  them.
-- Where Smartable's fee is a separate transaction, it is requested only after
-  the trade has completed. A failed or refunded trade owes nothing.
-
 ## Get the app
 
 Android 11 or later on a 64-bit ARM phone. Download from
