@@ -4,12 +4,12 @@
 
 <br>
 
-[![Release](https://img.shields.io/gitlab/v/release/getsmartable-app%2Fandroid?label=release&color=3ce9c4)](https://gitlab.com/getsmartable-app/android/-/releases)
-[![Android 11+ · arm64](https://img.shields.io/badge/Android-11%2B%20%C2%B7%20arm64-3ce9c4?logo=android&logoColor=white)](https://getsmartable.app/get)
-[![Non-custodial](https://img.shields.io/badge/custody-non--custodial-3ce9c4)](https://getsmartable.app/security)
-[![84 mainnets](https://img.shields.io/badge/mainnets-84%20%C2%B7%2055%20EVM%20%C2%B7%2029%20non--EVM-3ce9c4)](https://getsmartable.app/networks)
-[![13 languages](https://img.shields.io/badge/languages-13-3ce9c4)](#at-a-glance)
-[![Core: Apache-2.0](https://img.shields.io/badge/core-Apache--2.0-3ce9c4)](https://gitlab.com/getsmartable-app/core)
+[![Release](https://img.shields.io/gitlab/v/release/getsmartable-app%2Fandroid?label=release&color=0f766e)](https://gitlab.com/getsmartable-app/android/-/releases)
+[![Android 11+ · arm64](https://img.shields.io/badge/Android-11%2B%20%C2%B7%20arm64-0f766e?logo=android&logoColor=white)](https://getsmartable.app/get)
+[![Non-custodial](https://img.shields.io/badge/custody-non--custodial-0f766e)](https://getsmartable.app/security)
+[![84 mainnets](https://img.shields.io/badge/mainnets-84%20%C2%B7%2055%20EVM%20%C2%B7%2029%20non--EVM-0f766e)](https://getsmartable.app/networks)
+[![13 languages](https://img.shields.io/badge/languages-13-0f766e)](#at-a-glance)
+[![Core: Apache-2.0](https://img.shields.io/badge/core-Apache--2.0-0f766e)](https://gitlab.com/getsmartable-app/core)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/15544/badge)](https://www.bestpractices.dev/projects/15544)
 
 **[Website](https://getsmartable.app)** ·
@@ -36,7 +36,7 @@ through Smartable.
 
 ## At a glance
 
-| | |
+| Area | Details |
 |---|---|
 | **Platform** | Android 11 or later on a 64-bit ARM phone (arm64-v8a), as a direct APK download |
 | **Networks** | 84 mainnets: 55 EVM networks, Bitcoin and its family, Solana, TON, XRP Ledger, Cardano, Polkadot, the Cosmos zones, Kaspa, Starknet, the Internet Computer and more — [full list](https://getsmartable.app/networks). Mainnets only: no test networks, no test mode |
