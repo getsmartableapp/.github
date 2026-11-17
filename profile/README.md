@@ -10,7 +10,7 @@
 [![83 mainnets](https://img.shields.io/badge/mainnets-83%20%C2%B7%2053%20EVM%20%C2%B7%2030%20non--EVM-0f766e)](https://getsmartable.app/networks)
 [![13 languages](https://img.shields.io/badge/languages-13-0f766e)](#at-a-glance)
 [![Core: Apache-2.0](https://img.shields.io/badge/core-Apache--2.0-0f766e)](https://github.com/getsmartableapp/core)
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/15544/badge)](https://www.bestpractices.dev/projects/15544)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16847/badge)](https://www.bestpractices.dev/projects/16847)
 
 **[Website](https://getsmartable.app)** ·
 **[Download](https://getsmartable.app/get)** ·
