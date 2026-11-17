@@ -7,9 +7,9 @@
 [![Release](https://img.shields.io/gitlab/v/release/getsmartable-app%2Fandroid?label=release&color=0f766e)](https://gitlab.com/getsmartable-app/android/-/releases)
 [![Android 11+ · arm64](https://img.shields.io/badge/Android-11%2B%20%C2%B7%20arm64-0f766e?logo=android&logoColor=white)](https://getsmartable.app/get)
 [![Non-custodial](https://img.shields.io/badge/custody-non--custodial-0f766e)](https://getsmartable.app/security)
-[![84 mainnets](https://img.shields.io/badge/mainnets-84%20%C2%B7%2055%20EVM%20%C2%B7%2029%20non--EVM-0f766e)](https://getsmartable.app/networks)
+[![83 mainnets](https://img.shields.io/badge/mainnets-83%20%C2%B7%2053%20EVM%20%C2%B7%2030%20non--EVM-0f766e)](https://getsmartable.app/networks)
 [![13 languages](https://img.shields.io/badge/languages-13-0f766e)](#at-a-glance)
-[![Core: Apache-2.0](https://img.shields.io/badge/core-Apache--2.0-0f766e)](https://gitlab.com/getsmartable-app/core)
+[![Core: Apache-2.0](https://img.shields.io/badge/core-Apache--2.0-0f766e)](https://github.com/getsmartableapp/core)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/15544/badge)](https://www.bestpractices.dev/projects/15544)
 
 **[Website](https://getsmartable.app)** ·
@@ -17,7 +17,7 @@
 **[Docs](https://docs.getsmartable.app)** ·
 **[Security](https://getsmartable.app/security)** ·
 **[How it's built](https://getsmartable.app/how-its-built)** ·
-**[Core source](https://gitlab.com/getsmartable-app/core)** ·
+**[Core source](https://github.com/getsmartableapp/core)** ·
 **[Support the author](#support-the-author)**
 
 </div>
@@ -39,7 +39,7 @@ through Smartable.
 | Area | Details |
 |---|---|
 | **Platform** | Android 11 or later on a 64-bit ARM phone (arm64-v8a), as a direct APK download |
-| **Networks** | 84 mainnets: 55 EVM networks, Bitcoin and its family, Solana, TON, XRP Ledger, Cardano, Polkadot, the Cosmos zones, Kaspa, Starknet, the Internet Computer and more — [full list](https://getsmartable.app/networks). Mainnets only: no test networks, no test mode |
+| **Networks** | 83 mainnets: 53 EVM networks, Bitcoin and its family, Zcash (transparent addresses), Solana, TON, XRP Ledger, Cardano, Polkadot, the Cosmos zones, Kaspa, Starknet, the Internet Computer and more — [full list](https://getsmartable.app/networks). Mainnets only: no test networks, no test mode |
 | **Accounts** | BIP-39 recovery phrases, several wallets side by side; imported private keys (EVM, TRON, Solana, Bitcoin); Ledger, Trezor and Keystone; watch-only (an EVM address or ENS name, or one Bitcoin address) |
 | **Unlock** | Wallet password of 12+ characters, a six-digit app PIN and biometric quick unlock. The phone's own passcode or pattern never opens the wallet |
 | **Backup** | Recovery phrase, or a SLIP-39 split backup (2-of-3 or 3-of-5): one share stays on the phone, the others go to Google Drive, MEGA, Backblaze B2 or paper |
@@ -99,9 +99,9 @@ through Smartable.
 - The PIN first passes through a key held in the phone's key store, and every
   place a secret is typed shares one wrong-guess counter. Its wait runs on the
   boot clock, so changing the date does not end a lockout.
-- A Rust key core, which keeps the seed and every key derived from it out of
-  Dart and checks an EVM transaction's bytes before signing it, is in
-  development. Releases do not use it yet.
+- The seed and every key derived from it are held in a Rust key core, which
+  signs a transaction or a message only after reading it itself. Releases use
+  it from 3.0.0.
 
 ## Get the app
 
@@ -126,12 +126,14 @@ and in each GitLab release. If any of them differ, do not install the file.
 
 ## Open-source core
 
-[Smartable Wallet Core](https://gitlab.com/getsmartable-app/core) publishes the
-part of the app that keeps it non-custodial on the phone: how a typed password
-becomes key material, where secrets are stored, how the PIN and its lockout
-work, how a recovery phrase is split for backup, and the hardware key the
-wallet is sealed under. It is licensed under Apache-2.0, and each release comes
-with `SHA256SUMS` and a SLSA build-provenance attestation.
+[Smartable Wallet Core](https://github.com/getsmartableapp/core) publishes the
+part of the app that keeps it non-custodial on the phone: the Rust key core
+that holds the seed and every key and signs, how a typed password becomes key
+material, where secrets are stored, how the PIN and its lockout work, how a
+recovery phrase is split for backup, and the hardware key the wallet is sealed
+under. It is licensed under Apache-2.0; the current version is 2.0.0, and each
+release here comes with `SHA256SUMS` and a SLSA build-provenance attestation.
+The same releases are on [GitLab](https://gitlab.com/getsmartable-app/core).
 
 No independent security audit has been completed.
 
