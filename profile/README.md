@@ -4,7 +4,7 @@
 
 <br>
 
-[![Release](https://img.shields.io/gitlab/v/release/getsmartable-app%2Fandroid?label=release&color=0f766e)](https://gitlab.com/getsmartable-app/android/-/releases)
+[![Release](https://img.shields.io/github/v/release/getsmartableapp/android?label=release&color=0f766e)](https://github.com/getsmartableapp/android/releases)
 [![Android 11+ · arm64](https://img.shields.io/badge/Android-11%2B%20%C2%B7%20arm64-0f766e?logo=android&logoColor=white)](https://getsmartable.app/get)
 [![Non-custodial](https://img.shields.io/badge/custody-non--custodial-0f766e)](https://getsmartable.app/security)
 [![83 mainnets](https://img.shields.io/badge/mainnets-83%20%C2%B7%2053%20EVM%20%C2%B7%2030%20non--EVM-0f766e)](https://getsmartable.app/networks)
@@ -106,9 +106,10 @@ through Smartable.
 ## Get the app
 
 Android 11 or later on a 64-bit ARM phone. Download from
-[getsmartable.app/get](https://getsmartable.app/get) or the
-[GitLab releases](https://gitlab.com/getsmartable-app/android/-/releases), and
-check the file before installing it:
+[getsmartable.app/get](https://getsmartable.app/get), the
+[GitHub releases](https://github.com/getsmartableapp/android/releases) or the
+[GitLab releases](https://gitlab.com/getsmartable-app/android/-/releases) — the
+same file — and check it before installing it:
 
 ```bash
 shasum -a 256 -c SHA256SUMS            # Linux: sha256sum -c SHA256SUMS
