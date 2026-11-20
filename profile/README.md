@@ -44,7 +44,7 @@ through Smartable.
 | **Unlock** | Wallet password of 12+ characters, a six-digit app PIN and biometric quick unlock. The phone's own passcode or pattern never opens the wallet |
 | **Backup** | Recovery phrase, or a SLIP-39 split backup (2-of-3 or 3-of-5): one share stays on the phone, the others go to Google Drive, MEGA, Backblaze B2 or paper |
 | **dApps** | WalletConnect (Reown WalletKit) and a built-in dApp browser |
-| **Swaps and bridges** | 0x, LI.FI, Jupiter, THORChain, STON.fi, xExchange, Vestige, Sirius and Stellar's own exchange; bridges through Across, Stargate and CCTP |
+| **Swaps and bridges** | 0x, LI.FI, Jupiter, THORChain, STON.fi, Sirius and Stellar's own exchange; bridges through Across, Stargate and CCTP |
 | **Languages** | English, Español, Deutsch, Français, Italiano, 简体中文, 日本語, 한국어, Türkçe, Polski, Português, ไทย, Bahasa Indonesia |
 | **License** | The app is proprietary; its [core](#open-source-core) is Apache-2.0 |
 
