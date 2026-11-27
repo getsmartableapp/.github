@@ -61,6 +61,23 @@ serves the pair and puts them side by side, ranked by what you receive.
 </tr>
 </table>
 
+### More routes
+
+<table>
+<tr>
+<td width="50%" valign="top"><b>Tether on TRON → Bitcoin</b><br>USDT out, real bitcoin in, through THORChain.<br><br><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-usdt-tron-btc.svg" width="100%" alt="A schematic: 1,000 USDT on TRON to about 0.0161 BTC through THORChain"></td>
+<td width="50%" valign="top"><b>USDC from Ethereum to Base</b><br>The same coin on another chain, bridges compared.<br><br><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-usdc-ethereum-base.svg" width="100%" alt="A schematic: 1,000 USDC on Ethereum to about 992.50 USDC on Base through LI.FI"></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>Ether → Zcash</b><br>Native ZEC to your own Zcash address.<br><br><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-eth-zec.svg" width="100%" alt="A schematic: 0.5 ETH to about 1.124 ZEC through THORChain"></td>
+<td width="50%" valign="top"><b>A swap on one chain</b><br>Several venues asked; an exact approval, never unlimited.<br><br><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-eth-usdc.svg" width="100%" alt="A schematic: 0.5 ETH to about 852.97 USDC on Ethereum through 0x"></td>
+</tr>
+</table>
+
+<sub>The figures are examples. Bitcoin to Ether is a quote of 25 November 2026; the
+others follow market prices of 27 November 2026. A quote in the app is live and
+can differ.</sub>
+
 ## At a glance
 
 | Area | Details |
