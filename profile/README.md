@@ -34,6 +34,33 @@ The wallet asks nothing of a blockchain until you connect a network. Balances,
 sends and history then go from your phone to that connection alone, never
 through Smartable.
 
+## Cross-chain swaps
+
+<table>
+<tr>
+<td width="42%" valign="top"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/cross-chain-swap.svg" width="100%" alt="A schematic of Smartable's cross-chain swap: 0.1 BTC to about 3.525 ETH, two routes compared and the one that gives the most chosen"></td>
+<td valign="top">
+
+**Bitcoin to Ether, Ether to Zcash, Cardano to Bitcoin — on one screen.**
+Choose what you pay and what you want. The wallet asks every route that
+serves the pair and puts them side by side, ranked by what you receive.
+
+- **Native coins.** BTC, ZEC, RUNE, ADA and OSMO move as themselves through
+  THORChain, Maya and Osmosis — no wrapped tokens, no bridge to set up.
+- **Compared for you.** Each venue — THORChain, Maya, Osmosis, LI.FI and 0x —
+  is quoted on its own; the minimum you get and the time it takes are shown
+  before you decide.
+- **Checked on your phone.** The wallet reads the transaction itself —
+  recipient, asset, amount — before you sign, and does not offer a route it
+  cannot check.
+- **Followed to arrival.** A swap is tracked from the chain it leaves to the
+  chain it reaches.
+- **No sign-up.** Your keys stay on your phone; there is no account to create.
+
+</td>
+</tr>
+</table>
+
 ## At a glance
 
 | Area | Details |
