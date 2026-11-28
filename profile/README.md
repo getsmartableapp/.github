@@ -65,12 +65,15 @@ serves the pair and puts them side by side, ranked by what you receive.
 
 <table>
 <tr>
-<td width="50%" valign="top"><b>Tether on TRON → Bitcoin</b><br>USDT out, real bitcoin in, through THORChain.<p align="center"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-usdt-tron-btc.svg" width="328" alt="A schematic: 1,000 USDT on TRON to about 0.0161 BTC through THORChain"></p></td>
-<td width="50%" valign="top"><b>USDC from Ethereum to Base</b><br>The same coin on another chain, bridges compared.<p align="center"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-usdc-ethereum-base.svg" width="328" alt="A schematic: 1,000 USDC on Ethereum to about 992.50 USDC on Base through LI.FI"></p></td>
+<td width="50%" align="center" valign="top"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-usdt-tron-btc.svg" width="328" alt="A schematic: 1,000 USDT on TRON to about 0.0161 BTC through THORChain"><br><br><b>Tether on TRON → Bitcoin</b><br>USDT out, real bitcoin in, through THORChain.</td>
+<td width="50%" align="center" valign="top"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-usdc-ethereum-base.svg" width="328" alt="A schematic: 1,000 USDC on Ethereum to about 992.50 USDC on Base through LI.FI"><br><br><b>USDC from Ethereum to Base</b><br>The same coin on another chain, bridges compared.</td>
 </tr>
+</table>
+
+<table>
 <tr>
-<td width="50%" valign="top"><b>Ether → Zcash</b><br>Native ZEC to your own Zcash address.<p align="center"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-eth-zec.svg" width="328" alt="A schematic: 0.5 ETH to about 1.124 ZEC through THORChain"></p></td>
-<td width="50%" valign="top"><b>A swap on one chain</b><br>Several venues asked; an exact approval, never unlimited.<p align="center"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-eth-usdc.svg" width="328" alt="A schematic: 0.5 ETH to about 852.97 USDC on Ethereum through 0x"></p></td>
+<td width="50%" align="center" valign="top"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-eth-zec.svg" width="328" alt="A schematic: 0.5 ETH to about 1.124 ZEC through THORChain"><br><br><b>Ether → Zcash</b><br>Native ZEC to your own Zcash address.</td>
+<td width="50%" align="center" valign="top"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/swap-eth-usdc.svg" width="328" alt="A schematic: 0.5 ETH to about 852.97 USDC on Ethereum through 0x"><br><br><b>A swap on one chain</b><br>Several venues asked; an exact approval, never unlimited.</td>
 </tr>
 </table>
 
