@@ -38,7 +38,7 @@ through Smartable.
 
 <table>
 <tr>
-<td width="42%" valign="top"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/cross-chain-swap.svg" width="328" alt="A schematic of Smartable's cross-chain swap: 0.1 BTC to about 3.525 ETH, two routes compared and the one that gives the most chosen"></td>
+<td width="50%" valign="top"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/cross-chain-swap.svg" width="328" alt="A schematic of Smartable's cross-chain swap: 0.1 BTC to about 3.525 ETH, two routes compared and the one that gives the most chosen"></td>
 <td valign="top">
 
 **Bitcoin to Ether, Ether to Zcash, Cardano to Bitcoin — on one screen.**
