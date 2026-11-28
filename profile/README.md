@@ -7,34 +7,19 @@
 [![Release](https://img.shields.io/github/v/release/getsmartableapp/android?label=release&color=0f766e)](https://github.com/getsmartableapp/android/releases)
 [![Android 11+ · arm64](https://img.shields.io/badge/Android-11%2B%20%C2%B7%20arm64-0f766e?logo=android&logoColor=white)](https://getsmartable.app/get)
 [![Non-custodial](https://img.shields.io/badge/custody-non--custodial-0f766e)](https://getsmartable.app/security)
-[![84 mainnets](https://img.shields.io/badge/mainnets-84%20%C2%B7%2053%20EVM%20%C2%B7%2031%20non--EVM-0f766e)](https://getsmartable.app/networks)
-[![13 languages](https://img.shields.io/badge/languages-13-0f766e)](#at-a-glance)
-[![Core: Apache-2.0](https://img.shields.io/badge/core-Apache--2.0-0f766e)](https://github.com/getsmartableapp/core)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16847/badge)](https://www.bestpractices.dev/projects/16847)
 
 **[Website](https://getsmartable.app)** ·
 **[Download](https://getsmartable.app/get)** ·
 **[Docs](https://docs.getsmartable.app)** ·
 **[Security](https://getsmartable.app/security)** ·
-**[How it's built](https://getsmartable.app/how-its-built)** ·
-**[Core source](https://github.com/getsmartableapp/core)** ·
-**[Support the author](#support-the-author)**
+**[Core source](https://github.com/getsmartableapp/core)**
 
 </div>
 
 ---
 
-Smartable Wallet is a self-custody, multi-chain wallet for Android. Each wallet
-has its own recovery phrase, and no company holds your coins — not even us.
-Recovery phrases and private keys are designed to remain encrypted on your
-phone or inside the hardware wallet you connect. There is no backend signer and
-no recovery key held by Smartable.
-
-The wallet asks nothing of a blockchain until you connect a network. Balances,
-sends and history then go from your phone to that connection alone, never
-through Smartable.
-
-## Cross-chain swaps
+## Cross-chain swaps from your own wallet
 
 <table>
 <tr>
@@ -42,24 +27,20 @@ through Smartable.
 <td valign="top">
 
 **Bitcoin to Ether, Ether to Zcash, Cardano to Bitcoin — on one screen.**
-Choose what you pay and what you want. The wallet asks every route that
-serves the pair and puts them side by side, ranked by what you receive.
+Pick what you pay and what you want. The wallet asks every route that serves
+the pair and puts them side by side, ranked by what you receive.
 
-- **Native coins.** BTC, ZEC, RUNE, ADA and OSMO move as themselves through
-  THORChain, Maya and Osmosis — no wrapped tokens, no bridge to set up.
-- **Compared for you.** Each venue — THORChain, Maya, Osmosis, LI.FI and 0x —
-  is quoted on its own; the minimum you get and the time it takes are shown
-  before you decide.
-- **Checked on your phone.** The wallet reads the transaction itself —
-  recipient, asset, amount — before you sign, and does not offer a route it
-  cannot check.
-- **Followed to arrival.** A swap is tracked from the chain it leaves to the
-  chain it reaches.
-- **No sign-up.** Your keys stay on your phone; there is no account to create.
+- **Native coins.** BTC, ZEC, RUNE, ADA and OSMO move as themselves, unwrapped.
+- **Compared for you.** THORChain, Maya, Osmosis, LI.FI and 0x, each quoted.
+- **Checked on your phone.** Recipient, asset and amount, read from what you sign.
+- **Followed to arrival.** From the chain it leaves to the chain it reaches.
+- **No sign-up.** No account to create; your keys stay on your phone.
 
 </td>
 </tr>
 </table>
+
+<p align="center"><a href="https://getsmartable.app/get"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/download-android.svg" width="260" alt="Download for Android"></a><br><sub>Android 11 or later, 64-bit ARM · <a href="#get-the-app">check the file before you install it</a></sub></p>
 
 ### More routes
 
@@ -80,6 +61,18 @@ serves the pair and puts them side by side, ranked by what you receive.
 <sub>The figures are examples. Bitcoin to Ether is a quote of 25 November 2026; the
 others follow market prices of 27 November 2026. A quote in the app is live and
 can differ.</sub>
+
+## Self-custody
+
+Smartable Wallet is a self-custody, multi-chain wallet for Android. Each wallet
+has its own recovery phrase, and no company holds your coins — not even us.
+Recovery phrases and private keys are designed to remain encrypted on your
+phone or inside the hardware wallet you connect. There is no backend signer and
+no recovery key held by Smartable.
+
+The wallet asks nothing of a blockchain until you connect a network. Balances,
+sends and history then go from your phone to that connection alone, never
+through Smartable.
 
 ## At a glance
 
@@ -110,7 +103,10 @@ can differ.</sub>
 - **Quiet by default.** No remote notifications and no Firebase. Crash reports
   are off until you turn them on.
 
-## Before you sign
+## Security in depth
+
+<details>
+<summary><b>Before you sign</b> — what the wallet reads and refuses</summary>
 
 - **Review.** Network, sender, recipient, asset, amount, network fee and a
   summary of any contract call, with a simulation where the network supports
@@ -132,7 +128,10 @@ can differ.</sub>
 - **One broadcast.** A transaction whose broadcast result is uncertain is shown
   as pending, and the wallet never offers to send the same payment again.
 
-## How keys are protected
+</details>
+
+<details>
+<summary><b>How keys are protected</b> — storage, unlock and the Rust key core</summary>
 
 - Secrets are stored encrypted in the platform keystore or not at all — there is
   no plaintext fallback. A secret that cannot be decrypted is reported, never
@@ -150,13 +149,18 @@ can differ.</sub>
   signs a transaction or a message only after reading it itself. Releases use
   it from 3.0.0.
 
+</details>
+
 ## Get the app
 
 Android 11 or later on a 64-bit ARM phone. Download from
 [getsmartable.app/get](https://getsmartable.app/get), the
 [GitHub releases](https://github.com/getsmartableapp/android/releases) or the
 [GitLab releases](https://gitlab.com/getsmartable-app/android/-/releases) — the
-same file — and check it before installing it:
+same file.
+
+<details>
+<summary><b>Check the file before you install it</b> — its SHA-256 and the signer's certificate</summary>
 
 ```bash
 shasum -a 256 -c SHA256SUMS            # Linux: sha256sum -c SHA256SUMS
@@ -172,6 +176,8 @@ a620bbde76e011db72c5ded72c4c4dc37ab57fb02f91ac840286bd628568e335
 The same value is published on [getsmartable.app/get](https://getsmartable.app/get)
 and in each GitLab release. If any of them differ, do not install the file.
 
+</details>
+
 ## Open-source core
 
 [Smartable Wallet Core](https://github.com/getsmartableapp/core) publishes the
@@ -185,7 +191,13 @@ The same releases are on [GitLab](https://gitlab.com/getsmartable-app/core).
 
 No independent security audit has been completed.
 
-## Support the author
+## Security reports
+
+Please report suspected vulnerabilities privately to
+[hello@getsmartable.app](mailto:hello@getsmartable.app), not in a public issue.
+
+<details>
+<summary><b>Support the author</b> — voluntary contributions in USDC, USDT or bitcoin</summary>
 
 Smartable is built and maintained by its author. If the app is useful to you,
 you can send a voluntary contribution to one of the addresses below.
@@ -227,10 +239,7 @@ return.
 Each party is responsible for their own tax and reporting obligations under
 applicable law.
 
-## Security reports
-
-Please report suspected vulnerabilities privately to
-[hello@getsmartable.app](mailto:hello@getsmartable.app), not in a public issue.
+</details>
 
 ---
 
