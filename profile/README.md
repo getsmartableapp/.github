@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://getsmartable.app"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/banner.png" width="100%" alt="Smartable — self-custody multi-chain wallet. All your crypto, finally in one place."></a>
+<a href="https://getsmartable.app"><img src="https://raw.githubusercontent.com/getsmartableapp/.github/main/profile/assets/banner.png" width="100%" alt="Smartable — swap across chains, keep your keys. A self-custody wallet for Android: native BTC, ETH and ZEC, every route compared and checked on your phone before you sign."></a>
 
 <br>
 
